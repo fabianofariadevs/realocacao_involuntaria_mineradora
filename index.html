@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap-5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles/bootstrap-5.2.2/dist/css/bootstrap.css">
+    <script src="styles/bootstrap-5.2.2/dist/js/bootstrap.min.js"></script>
+    <title>Mineradora Land Gold </title>
+
+  
+</head>
+<body>
+
+    <nav class="navbar navbar-light navbar-fixed-tofa-pulse navbar-expand-lg h1">
+        <div id="navlogo" class="container-fluid" style="background-color:rgb(247, 178, 18); border-color:rgba(2, 2, 12, 0.064);">
+                  
+          <a class="navbar-brand" href="#">
+            <img id=logo src="image/1000_F_273867502_7LPaNvAvjB7jk0zq3LSnUXu5mCmf0Hyy.jpg" alt="logo_mina_de_Ouro" width="150" height="64" class="w3-circle">
+            Mina de Ouro Mineradora      <br>     .....Land Gold...
+          </a>
+        
+          <div class='container'>
+            <div class="w3-container w3-bar" id="Fundo" name="Fundo">
+                        <div class='label-float'>
+                          <h4>Área de <b>Login </b> Usuários</h4>
+                         <label for="usuario">Usuário</label> <input type="text" id="usuario" placeholder="">
+                         <label for="usuario">Senha</label>  <input type="password" id="senha" placeholder="">
+                         <button style="font-size:16px;position: relative;right: 0px;left: 1000px;">Entrar</button>
+                         <p>Não tem uma conta?
+                          <a href="">Cadastre-se</a>
+                          </p>
+                        </div>
+            </div>
+          </div>
+
+      </nav>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projetos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  contato
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Situação dos Resultados</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="pequisar" placeholder="buscar..." aria-label="pesquisar">
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container-fluid">
+      <div class="w3-content w3-display-container">
+        <img class="mySlides" src="image/foto_1.jpg" alt="" style="width:100%">
+        <img class="mySlides" src="image/foto_2.jpg" alt="" style="width:100%">
+        <img class="mySlides" src="image/foto_ref.jpg" alt="" style="width:100%">
+        <img class="mySlides" src="image/foto_ref2.jpg" alt="" style="width:100%">
+        <button class="w3-button w3-yellow w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-yellow w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div> 
+      <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+              <script src="styles/bootstrap-5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
